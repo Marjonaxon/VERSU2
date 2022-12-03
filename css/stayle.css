@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background: #222;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#header{
+    width: 100%;
+    background-image: url('../img/bg-hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 28px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    width: 89px;
+    height: 30px;
+}
+.nav-left img{
+    width: inherit;
+    height: inherit;
+}
+.nav-right ul li{
+    display: inline-block;
+}
+.nav-right ul li:not(:last-child){
+    margin-right: 40px;
+}
+.nav-right ul li a{
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+    text-decoration: none;
+}
+.nav-right ul li a.active{
+    color: #00D6B4;
+}
+.hero{
+    padding: 140px 0;
+    text-align: center;
+}
+.hero h1{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 465px ;
+    margin: 0 auto;
+    margin-bottom: 29px;
+}
+.hero-btn{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00D6B4;
+    padding: 10px 26px ;
+    border: 1px solid #00D6B4;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: .4;
+}
+.hero-btn:hover{
+    background-color: #011e28;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.hero-btn:active{
+    opacity: 0.5;
+}
+.bg-cards{
+    padding: 50px 0 79px 0;
+}
+.card-title{
+    text-align: center;
+    margin-bottom: 33px;
+}
+.card-title{
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 300px;
+    height: 225px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.card img{
+    width: inherit;
+    height: inherit;
+    border-radius: 3px;
+    object-fit: cover;
+}
+#footer{
+    padding: 35px 0;
+    text-align: center;
+}
+#footer h1{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C2C2C2;
+    margin-bottom: 10px;
+}
+#footer p{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #999999;
+}
